@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/reset.css">
     <title>Home Monitoring</title>
@@ -26,19 +26,24 @@
             </div>
         </aside>
         <section class="main-content">
-            <header>
+            <header class="header">
                 <span class="user-info">
                     <div>
                         <img src="/assets/icons/user.png" alt="User Icon">
                     </div>
-                    <div>
+                    <div class="user-info-text">
                         <p>Hi, Eduardo</p>
                         <p>Everything looks fine</p>
                     </div>
                 </span>
                 <div class="date-n-time">
-                    <p>August 01</p>
-                    <p>Monday</p>
+                    <div class="clock">
+                        <p id="time"></p>
+                    </div>
+                    <div class="date">
+                        <p>August 01</p>
+                        <p>Monday</p>
+                    </div>
                 </div>
             </header>
             <section class="home-information">
