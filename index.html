@@ -16,11 +16,11 @@
         <aside class="side-bar">
             <div class="side-bar_content">
 
-                <a href="" class="statistics-link">
+                <a href="#" class="statistics-link">
                     <img src="/assets/icons/coolicon.png" alt="Statistics">
                     <p>Statistics</p>
                 </a>
-                <a href="" class="config-link">
+                <a href="#" class="config-link">
                     <img src="/assets/icons/config.png" alt="Configuration">
                 </a>
             </div>
@@ -40,43 +40,110 @@
                     <div class="clock">
                         <p id="time"></p>
                     </div>
-                    <div class="date">
+                    <div id="date">
                         <p>August 01</p>
                         <p>Monday</p>
                     </div>
                 </div>
             </header>
             <section class="home-information">
-                <div class="weather-info"></div>
                 <ul class="home-status">
                     <li class="info-card">
                         <h3 class="card-title">Lights</h3>
-                        <p>Livingroom</p>
+                        <section class="card_info">
+                            <div>
+                                <p>Livingroom</p>
+                                <p>Bedroom</p>
+                            </div>
+                            <div class="lights_switchies">
+                                <button id="button2" type="button">
+                                    <img id="onSwitch1" class="switch_image" src="/assets/icons/on switch.png">
+                                </button>
+                                <button id="button3" type="button">
+                                    <img id="onSwitch2" class="switch_image" src="/assets/icons/on switch.png">
+                                </button>
+                            </div>
+                            
+                        </section>
+
                     </li>
                     <li class="info-card">
                         <h3 class="card-title">Wifi</h3>
-                        <p>Download: 0000</p>
-                        <p>Upload: 0000</p>
-                    </li>
+                        <section class="card_info">
+                            <div>
+                                <p>Download:</p>
+                                <p>Upload:</p>
+                            </div>
+                            <div>
+                                <p id="download_speed"></p>
+                                <p id="upload_speed"></p>
+                            </div>
+                        </section>
+                        </li>
                     <li class="info-card">
                         <h3 class="card-title">Plants</h3>
-                        <p>Water</p>
-                        <p>Soil</p>
+                        <section class="card_info">
+                            <div>
+                                <p>Water:</p>
+                                <p>Soil:</p>
+                            </div>
+                            <div>
+                                <p>OK</p>
+                                <p>OK</p>
+                            </div>
+                        </section>
                     </li>
-                    <li class="info-card">
+                    <li class="info-card" >
                         <h3 class="card-title">Air Quality</h3>
-                        <p>Temperatude: 25°C</p>
-                        <p>Humidity: 65%</p>
+                        <section class="card_info">
+
+                            <div>
+                                <p id="temperature">Temperature:</p>
+                                <p id="humidity">Humidity:</p>
+                            </div>
+                            <div>
+                                <p id="temperature_value"></p>
+                                <p id="humidity_value"></p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="temperature_icon" id="cold_icon">
+                                    <path
+                                        d="M22.5 44v-9.75l-7.45 7.45-2.15-2.1 9.6-9.6v-4.5H18l-9.4 9.4-2.2-2.05 7.35-7.35H4v-3h9.75L6.25 15l2.15-2.15L18 22.5h4.5v-4.55l-9.4-9.4 2.1-2.2 7.3 7.35V4h3v9.7L33 6.2l2.1 2.15-9.6 9.6v4.55h4.55l9.45-9.45 2.15 2.1-7.35 7.35H44v3h-9.7l7.4 7.45-2.05 2.15-9.6-9.6H25.5V30l9.6 9.65-2.05 2.15-7.55-7.55V44Z" />
+                                </svg>
+                            </div>
+                        </section>
                     </li>
                     <li class="info-card">
                         <h3 class="card-title">Consumption</h3>
-                        <p>Water: 330L</p>
-                        <p>Electricity: 522 kWh</p>
+                        <section class="card_info">
+                            <div>
+                                <p>Water: </p>
+                                <p>Electricity: </p>
+                            </div>
+                            <div>
+                                <p>330L</p>
+                                <p>522kWh</p>
+                            </div>
+                        </section>
                     </li>
                     <li class="info-card">
                         <h3 class="card-title">Devices</h3>
-                        <p>TV</p>
-                        <p>Speakers</p>
+                        <section class="card_info">
+                            <div>
+                                <p>TV</p>
+                                <p>Speakers</p>
+                            </div>
+                            <div class="smart_device_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                                    <path
+                                        d="M16.5 42v-4H7q-1.2 0-2.1-.9Q4 36.2 4 35V9q0-1.2.9-2.1Q5.8 6 7 6h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9h-9.5v4ZM7 35h34V9H7v26Zm0 0V9v26Z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                                    <path
+                                        d="M19.65 42q-3.15 0-5.325-2.175Q12.15 37.65 12.15 34.5q0-3.15 2.175-5.325Q16.5 27 19.65 27q1.4 0 2.525.4t1.975 1.1V6h11.7v6.75h-8.7V34.5q0 3.15-2.175 5.325Q22.8 42 19.65 42Z" />
+                                </svg>
+                            </div>
+                        </section>
                     </li>
                 </ul>
             </section>
